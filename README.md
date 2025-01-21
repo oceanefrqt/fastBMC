@@ -1,8 +1,15 @@
 # fastBMC
+==============================================
 
-Author: Océane FOURQUET
+## Introduction
 
-fastBMC\[[3]()\] is an extension of an established approach \[[2](https://academic.oup.com/jid/article/217/11/1690/4911472?login=true)\] to construct an emseble classifer based on bivariate monotonic models \[[1](https://link.springer.com/article/10.1007/s00453-012-9628-4)\]. It is implemented in Python and integrates a preselection phase reducing drastically the running time of the approach compared to the original one.
+fastBMC\[[3]()\] is an extension of an established approach \[[2](https://academic.oup.com/jid/article/217/11/1690/4911472?login=true)\] to construct an ensemble classifier based on bivariate monotonic classifiers \[[1](https://link.springer.com/article/10.1007/s00453-012-9628-4)\]. It is implemented in Python and integrates a preselection phase reducing drastically the running time of the approach compared to the original one.
+
+## Possible Use Cases
+
+The fastBMC approach, which identifies an ensemble model made of bivariate monotonic classifiers, has been designed to apply to transcriptomic data for predicting binary outcomes. However, its applications extend beyond transcriptomics and can be used for any binary classification problem with continuous data.
+- Transcriptomic analysis: fastBMC can be used to analyze transcriptomic data from microarrays or RNA-seq experiments to identify pairs of genes that are associated with a binary outcome, such as disease vs. healthy or treated vs. untreated.
+- Biomarker discovery: By identifying pairs of genes that are strongly associated with a binary outcome, fastBMC can be used to discover novel biomarkers for diseases or conditions.
 
 
 
