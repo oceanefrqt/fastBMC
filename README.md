@@ -54,8 +54,8 @@ The dataset comes from the UCI Machine Learning Repository ([dataset](https://ar
 
 
 ## References
-[1] Stout, Q.F. Isotonic Regression via Partitioning. Algorithmica 66, 93–112 (2013). https://doi.org/10.1007/s00453-012-9628-4
+[1] Q.F Stout. Isotonic Regression via Partitioning. Algorithmica 66, 93–112 (2013). https://doi.org/10.1007/s00453-012-9628-4
 
-[2] Iryna Nikolayeva, Pierre Bost, Isabelle Casademont, Veasna Duong, Fanny Koeth, Matthieu Prot, Urszula Czerwinska, Sowath Ly, Kevin Bleakley, Tineke Cantaert, Philippe Dussart, Philippe Buchy, Etienne Simon-Lorière, Anavaj Sakuntabhai, Benno Schwikowski, A Blood RNA Signature Detecting Severe Disease in Young Dengue Patients at Hospital Arrival, The Journal of Infectious Diseases, Volume 217, Issue 11, Pages 1690–1698 (2018) https://doi.org/10.1093/infdis/jiy086
+[2] I. Nikolayeva, P. Bost, I. Casademont, V. Duong, F. Koeth, M. Prot, U. Czerwinska, S. Ly, K. Bleakley, T. Cantaert, P. Dussart, P. Buchy, E. Simon-Lorière, A. Sakuntabhai, B. Schwikowski. A Blood RNA Signature Detecting Severe Disease in Young Dengue Patients at Hospital Arrival. The Journal of Infectious Diseases 217, 1690–1698 (2018). https://doi.org/10.1093/infdis/jiy086
 
-[3]
+[3] O. Fourquet, M.S. Krejca, C. Doerr, B. Schwikowski. Towards the Genome-scale Discovery of Bivariate Monotonic Classifiers. bioRxiv (2024). https://doi.org/10.1101/2023.02.22.529510
