@@ -19,6 +19,7 @@ The fastBMC approach, which identifies an ensemble model made of bivariate monot
 - numpy 1.19.2
 - matplotlib 3.3.4
 - multiprocessing
+- psutil
 
 This code uses the multiprocessing library to parallelize calculations. By default, the number of CPUs is set to 1, but it is possible to change this configuration with the parameters.
 
@@ -51,6 +52,25 @@ python3 run_mem.py sobar-72.csv  --nbcpus 12 --target ca_cervix
 ```
 The dataset comes from the UCI Machine Learning Repository ([dataset](https://archive.ics.uci.edu/ml/datasets/Cervical+Cancer+Behavior+Risk)). It contains 19 attributes regarding cervical cancer behavior risk, with class label ca_cervix with 1 and 0 as values which means the respondent is with and without cervical cancer, respectively.
 
+### Experiments
+In the Experiments subrepository, you can find the code that was used to get the results for the publication [3].
+
+
+In the Simulated Data, the create_simulated_data.py file enables to create the simulated data, you can select the directory for the data:
+```python
+python3 create_simulated_data.py -your_outdir/
+```
+Then, fastBMC_simulated_data.sh creates a dataframe containing five columns: the simulated dataset, the running time, the auc, the accuracy, and the f1 score, by using the run_fastBMC_simulated_data.py script. The bash script needs to be updated by selecting the directory containing the simulated dat that you want to run. The python script takse as parameters the same ones as run_mem.py. You can adjust your parameters by modifying the following line in the bash script:
+```python
+output=$(python3 run_fastBMC_simulated_data.py "$file" -your_parameters)
+```
+The values from the output dataframe are used to construct Figures 4 and 5 in [3].
+
+
+In the Real Data, you can run the fastBMC.sh and naiveBMC.sh to get two CSV files respectively, containing three columns: the number of features as input, the running time, and the AUC performance. These values are used to construct Figures 6 and 7 in [3]. The two bash script need to be updated by taking as input_file the dataset that you want to run. run_fastBMC_time_auc.py and run_naiveBMC_time_auc.py takes as parameters the same ones as run_mem.py. You can also adjust your parameters by modifying the following line in the bash script:
+```python
+output=$(python3 run_fastBMC_time_auc.py "$temp_output" -your_parameters)
+```
 
 
 ## References
